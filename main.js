@@ -1,4 +1,8 @@
 var marathons = [];
+var halfMarathons = [];
+var tenMilers = [];
+var tenKs = [];
+var fiveKs = [];
 
 
 marathons.push({
@@ -12,6 +16,26 @@ marathons.push({
     map: ""
 },
 {
+    title: "Chicago Marathon",
+    year: 2013,
+    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    racePic: "",
+    time: "4:08:15",
+    pace: "",
+    location: "Chicago, IL",
+    map: ""
+},
+{
+    title: "Chicago Marathon",
+    year: 2014,
+    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    racePic: "",
+    time: "4:15:49",
+    pace: "",
+    location: "Chicago, IL",
+    map: ""
+},
+{
     title: "Disney World Marathon",
     year: 2015,
     medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
@@ -19,6 +43,26 @@ marathons.push({
     time: "4:15:00",
     pace: "",
     location: "Lake Buena Vista, FL",
+    map: ""
+},
+{
+    title: "Derby Festival Marathon",
+    year: 2016,
+    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    racePic: "",
+    time: "4:25:00",
+    pace: "",
+    location: "Louisville, KY",
+    map: ""
+},
+{
+    title: "Chicago Marathon",
+    year: 2016,
+    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    racePic: "",
+    time: "3:55:49",
+    pace: "",
+    location: "Chicago, IL",
     map: ""
 });
 
