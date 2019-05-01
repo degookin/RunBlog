@@ -5,3 +5,11 @@ h2 {
 .hidden {
     display: none;
 }
+
+.img-thumbnail {
+    width: 300px;
+}
+
+.rotated {
+    transform: rotate(90deg);
+}

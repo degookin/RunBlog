@@ -4,6 +4,7 @@ var tenMilers = [];
 var tenKs = [];
 var fiveKs = [];
 
+//need document.createElement
 
 marathons.push({
     title: "Chicago Marathon",
