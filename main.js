@@ -4,12 +4,10 @@ var tenMilers = [];
 var tenKs = [];
 var fiveKs = [];
 
-//need document.createElement
-
 marathons.push({
     title: "Chicago Marathon",
     year: 2012,
-    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    medalPic: "assets/ChicagoM2012.jpg",
     racePic: "",
     time: "4:08:08",
     pace: "",
@@ -19,7 +17,7 @@ marathons.push({
 {
     title: "Chicago Marathon",
     year: 2013,
-    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    medalPic: "assets/ChicagoM2013.jpg",
     racePic: "",
     time: "4:08:15",
     pace: "",
@@ -29,7 +27,7 @@ marathons.push({
 {
     title: "Chicago Marathon",
     year: 2014,
-    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    medalPic: "assets/ChicagoM2014.jpg",
     racePic: "",
     time: "4:15:49",
     pace: "",
@@ -39,7 +37,7 @@ marathons.push({
 {
     title: "Disney World Marathon",
     year: 2015,
-    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    medalPic: "assets/DisneyM2015.jpg",
     racePic: "",
     time: "4:15:00",
     pace: "",
@@ -49,7 +47,7 @@ marathons.push({
 {
     title: "Derby Festival Marathon",
     year: 2016,
-    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    medalPic: "assets/DerbyM2016.jpg",
     racePic: "",
     time: "4:25:00",
     pace: "",
@@ -59,7 +57,7 @@ marathons.push({
 {
     title: "Chicago Marathon",
     year: 2016,
-    medalPic: "https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80",
+    medalPic: "assets/ChicagoM2016.jpg",
     racePic: "",
     time: "3:55:49",
     pace: "",
@@ -67,38 +65,32 @@ marathons.push({
     map: ""
 });
 
-
-// function buildString(marathon){
-//     var result = "I ran the ";
-//     result += marathon.title + " in ";
-//     result += marathon.year;
-//     result += " with a time of " + marathon.time;
-//     return result;
-// }
-
-// marathons.forEach(function(marathon){
-//     console.log(buildString(marathon));
-// });
-
-
-
-//TESTING1
-// const keys = Object.keys(marathons);
 const values = Object.values(marathons);
-// const entries = Object.entries(marathons);
-// console.log(keys);
-// console.log(values);
-// console.log(entries);
 
 values.forEach(marathon => {
-    console.log("I ran the " + marathon.title + " in " + 
-    marathon.year +  " and my time was " + marathon.time);
+    //div to contain everything
+    var newDiv = document.createElement("div");
+    newDiv.className = "col-lg-4 col-sm-6"
+    document.body.appendChild(newDiv);
+    //Medal image
+    var image = document.createElement("img");
+    image.src = marathon.medalPic;
+    image.className = "raceImage img-thumbnail"
+    //Race title
+    var raceName = document.createElement("h3");
+    raceName.innerHTML = marathon.title;
+    //Race year
+    var year = document.createElement("h5");
+    year.innerHTML = marathon.year;
+    //Race time
+    var time = document.createElement("h5");
+    time.innerHTML = marathon.time;
+    newDiv.appendChild(image);
+    newDiv.appendChild(raceName);
+    newDiv.appendChild(year);
+    newDiv.appendChild(time);
+    document.getElementById("marathonContent").appendChild(newDiv);
 });
-
-
-
-//TESTING2
-
 
 
 
