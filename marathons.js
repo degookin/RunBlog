@@ -6,7 +6,7 @@ marathons.push({
     medalPic: "assets/ChicagoM2012.jpg",
     racePic: "",
     time: "4:08:08",
-    pace: "",
+    pace: "9:28",
     location: "Chicago, IL",
     map: ""
 },
@@ -15,8 +15,8 @@ marathons.push({
     year: 2013,
     medalPic: "assets/ChicagoM2013.jpg",
     racePic: "",
-    time: "4:08:15",
-    pace: "",
+    time: "4:08:29",
+    pace: "9:29",
     location: "Chicago, IL",
     map: ""
 },
@@ -25,8 +25,8 @@ marathons.push({
     year: 2014,
     medalPic: "assets/ChicagoM2014.jpg",
     racePic: "",
-    time: "4:15:49",
-    pace: "",
+    time: "4:15:05",
+    pace: "9:44",
     location: "Chicago, IL",
     map: ""
 },
@@ -35,8 +35,8 @@ marathons.push({
     year: 2015,
     medalPic: "assets/DisneyM2015.jpg",
     racePic: "",
-    time: "4:15:00",
-    pace: "",
+    time: "4:21:17",
+    pace: "9:58",
     location: "Lake Buena Vista, FL",
     map: ""
 },
@@ -45,8 +45,8 @@ marathons.push({
     year: 2016,
     medalPic: "assets/DerbyM2016.jpg",
     racePic: "",
-    time: "4:25:00",
-    pace: "",
+    time: "4:25:07",
+    pace: "10:07",
     location: "Louisville, KY",
     map: ""
 },
@@ -56,7 +56,7 @@ marathons.push({
     medalPic: "assets/ChicagoM2016.jpg",
     racePic: "",
     time: "3:55:49",
-    pace: "",
+    pace: "8:59",
     location: "Chicago, IL",
     map: ""
 });
@@ -77,13 +77,18 @@ mValues.forEach(marathon => {
     raceName.innerHTML = marathon.title;
     //Race year
     var year = document.createElement("h5");
-    year.innerHTML = marathon.year;
+    year.innerHTML = "Year: " + marathon.year;
     //Race time
     var time = document.createElement("h5");
-    time.innerHTML = marathon.time;
+    time.innerHTML = "Time: " + marathon.time;
+    //Race pace
+    var pace = document.createElement("h5");
+    pace.innerHTML = "Pace: " + marathon.pace + " min/mile";
+    //append everything to parent element
     newDiv.appendChild(image);
     newDiv.appendChild(raceName);
     newDiv.appendChild(year);
     newDiv.appendChild(time);
+    newDiv.appendChild(pace);
     document.getElementById("marathonContent").appendChild(newDiv);
 });
