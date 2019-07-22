@@ -25,6 +25,19 @@ h6 {
     transform: rotate(90deg);
 }
 
+iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+.boxThatShit {
+    border-radius: 4px;
+    box-shadow: 0 0 10px 2px gray;
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
