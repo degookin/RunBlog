@@ -59,6 +59,16 @@ marathons.push({
     pace: "8:59",
     location: "Chicago, IL",
     map: ""
+}
+{
+    title: "Chicago Marathon",
+    year: 2019,
+    medalPic: "",
+    racePic: "",
+    time: "4:18:53",
+    pace: "9:53",
+    location: "Chicago, IL",
+    map: ""
 });
 
 const mValues = Object.values(marathons);
