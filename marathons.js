@@ -59,7 +59,7 @@ marathons.push({
     pace: "8:59",
     location: "Chicago, IL",
     map: ""
-}
+},
 {
     title: "Chicago Marathon",
     year: 2019,
