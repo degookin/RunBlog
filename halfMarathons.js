@@ -119,6 +119,16 @@ halfMarathons.push({
     pace: "8:48",
     location: "Louisville, KY",
     map: ""
+},
+{
+    title: "Urban Bourbon Half Marathon",
+    year: 2021,
+    medalPic: "",
+    racePic: "",
+    time: "1:54:38",
+    pace: "8:45",
+    location: "Louisville, KY",
+    map: ""
 });
 
 const hValues = Object.values(halfMarathons);
